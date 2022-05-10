@@ -35,7 +35,7 @@ function Introduce(props) {
 
    
     return(
-        <div>
+        <div> 
             <h3>멋쟁이사자처럼 웹 아기사자 <br/>
                 이지은을 소개합니다 :-D
             </h3>
