@@ -71,12 +71,12 @@ function Introduce(props) {
 
             <div>
                 인스타그램 : <input onChange={onChangeInstaId} value={instaId}/><button>확인</button>
-                <p>@{instaId} 반가워요. 저랑 맞팔로우해요~</p>
+                <p>@{instaId} 반가워요. 저랑 맞팔로우해요~</p> 
 
             </div>
 
 
-        </div>
+        </div> 
     )
 
   
