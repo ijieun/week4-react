@@ -16,26 +16,47 @@ const colorW = "white";
 const colorO = "orange";
 
 
+
 function Introduce(props) {
   const [name, setName] = useState("");
   const [age, setAge] = useState(0);
   const [instaId, setInstaId] = useState("");
 
+
+
   function onChangeName(e) {
     setName(e.target.value);
   }
+  //
+  function onClickName(e){
+      setName(e.target.value);
+
+
+  }
+
 
   function onChangeAge(e) {
     setAge(e.target.value);
+  }
+//
+  function onClickAge(e){
+      setAge(e.target.value);
+
   }
 
   function onChangeInstaId(e) {
     setInstaId(e.target.value);
   }
 
+  //
+  function onInstaId(e){
+      setInstaId(e.target.value);
+  }
+
   return (
     <div>
       <div className="App">
+          <Fade bottom>
         <div
           css={css`
             padding: 32px;
@@ -52,27 +73,36 @@ function Introduce(props) {
         </div>
         <Fade bottom>
         <div class="introduceBox">
+            <br/><br/><br/>
           안녕하세요! 저는 <br />
           <img src={me} width="200px"></img>
           <br /> {props.name} <br />
           입니다.
         </div>
+        </Fade>
+
+        <Fade left>
         <div class="introduceBox">
           제 나이는 {props.age}살 20학번이구요,
-          <br />
+          <br /><br/><br/>
           <img src={myongji} width="500px"></img>
           <br />
           {props.major}예요.
-          <br />
+          <br /><br/><br/>
         </div>
+        </Fade>
+
+        <Fade top>
         <div class="introduceBox">
+            <br/>
           <img src={insta} width="250px"></img> <br />
           저의 인스타그램 아이디는 <br />
           @i_ji_silver
           <br />
-          입니다 :-){" "}
-        </div>{" "}
+          입니다 :-) <br/><br/>
+        </div> <br/>
         <hr />
+        </Fade>
         </Fade>
 
         <Fade bottom>
@@ -95,35 +125,44 @@ function Introduce(props) {
               <br />
             </div>
             이름 : <input onChange={onChangeName} value={name} />
-            <button onClick={onChangeName}>확인</button>
+            <button onClick={onClickName}>확인</button> <br/>
+            
+            
+
             <div>
               {name}님 안녕하세요 :)
               <br />
               <br />
+              <Fade>
               <img src={puppy} width="400px"></img>{" "}
+              </Fade>
             </div>
           </div>
 
           <div class="introduceBox">
             나이 : <input onChange={onChangeAge} value={age} />
-            <button>확인</button>
+            <button onClick={onClickAge}>확인</button> <br/>
             <div>
               {age}살 이시군요.
               <br />
               <br />
+              <Fade>
               <img src={nolla} width="250px"></img> <br />
+              </Fade>
             </div>
           </div>
 
           <div class="introduceBox">
             인스타그램 : <input onChange={onChangeInstaId} value={instaId} />
-            <button>확인</button>
+            <button onClick={onInstaId}>확인</button> <br/>
             <div>
               @{instaId} 반가워요. 저랑 맞팔로우해요~
               <br />
               스팸아님
               <br />
+              <Fade>
               <img src={spam} width="250px"></img> <br />
+              </Fade>
             </div>
           </div>
         </div>
