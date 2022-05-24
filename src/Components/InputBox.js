@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import styles from "./ComRandomClass.scss";
+import puppy from "./images/puppy.jpg";
+
 
 const InputBox = ({ todoList, setTodoList }) => {
   //투두리스트 입력
@@ -36,13 +38,15 @@ const InputBox = ({ todoList, setTodoList }) => {
   return (
     <div className="todoapp__inputbox">
       <div className="todoapp__namebox">
+      <img src={puppy} width='500px'/>
         <input
+        id="name_input"
           type="text"
           value={value}
           onChange={onChange}
           placeholder="What is your name?"
         ></input>
-        <button>입력</button>
+        <button className="todoapp__name-submit-btn">입력</button>
         <h3>Hello {value}</h3>
       </div>
 

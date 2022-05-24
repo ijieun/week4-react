@@ -11,9 +11,12 @@
 .todo__container{
     @include colors2;
     @include PadPositions;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 body{
     @include colors3;
     @include MarPositions;
 }
+

@@ -5,12 +5,14 @@
 }
 
 @mixin MarPositions {
-    margin: 50px;
+    margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 @mixin PadPositions {
     padding: 10px;
-    padding-bottom: 60px;
+    padding-bottom: 200px;
     
 }
 
@@ -24,13 +26,13 @@
 }
 
 @mixin colors2 {
-    background-color: lemonchiffon;
-    color: brown;
+    background-color: #F2C12E;
+    color: darkslategrey;
     
 }
 
 @mixin colors3 {
-    background-color: black;
+    background-color: #024959;
     
 }
 

@@ -1,6 +1,6 @@
 @mixin PadPositions {
     padding: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     
 }
 
@@ -11,12 +11,12 @@
 
 @mixin helloColors {
     color: navy;
-    background-color: lemonchiffon;
+    background-color: #F2C12E;
     
 }
 
 @mixin todoColors {
-    color: purple;
-    background-color: lemonchiffon;
+    color: #593E25;
+    background-color: #F2C12E;
     
 }

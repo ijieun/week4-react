@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./ComRandomClass.scss";
 
 const ToDoItem = ({ todoItem, todoList, setTodoList }) => {
   const onChangeCheckbox = () => {
@@ -23,9 +24,9 @@ const ToDoItem = ({ todoItem, todoList, setTodoList }) => {
       <span className={`todoapp__item-ctx ${ todoItem.checked ? 'todoapp__item-ctx-checked' : '' }`} > {todoItem.text}
       </span>
 
-      <button type="button" className="todoapp__item-edit-btn">
+      {/*<button type="button" className="todoapp__item-edit-btn">
         ✏
-      </button>
+  </button>*/}
       <button type="button" className="todoapp__item-delete-btn">
         ❌
       </button>
