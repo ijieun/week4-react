@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
+import styles from "./ComRandomClass.scss";
 
 const InputBox = ({ todoList, setTodoList }) => {
   //투두리스트 입력
@@ -34,7 +35,7 @@ const InputBox = ({ todoList, setTodoList }) => {
 
   return (
     <div className="todoapp__inputbox">
-      <div>
+      <div className="todoapp__namebox">
         <input
           type="text"
           value={value}
@@ -45,6 +46,7 @@ const InputBox = ({ todoList, setTodoList }) => {
         <h3>Hello {value}</h3>
       </div>
 
+      <div className="todoapp__todobox">
       <input
         type="text"
         name="todoItem"
@@ -62,6 +64,7 @@ const InputBox = ({ todoList, setTodoList }) => {
       >
         추가
       </button>
+      </div>
     </div>
   );
 };

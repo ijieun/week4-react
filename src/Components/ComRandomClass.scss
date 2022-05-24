@@ -1,0 +1,18 @@
+@import "./ComMixin.scss";
+
+.todoapp__namebox{
+    @include PadPositions;
+    @include helloColors;
+    @include MarPositions;
+}
+
+.todoapp__todobox{
+    @include PadPositions;
+    @include todoColors;
+
+}
+
+// .todoapp__inputbox{
+//     @include helloColors;
+    
+// }

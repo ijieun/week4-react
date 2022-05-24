@@ -1,0 +1,40 @@
+@mixin MainPositions{
+    text-align: center;
+    padding: 60px;
+
+}
+
+@mixin MarPositions {
+    margin: 50px;
+}
+
+@mixin PadPositions {
+    padding: 10px;
+    padding-bottom: 60px;
+    
+}
+
+@mixin PadPositions2 {
+    padding: 10px;
+    
+}
+
+@mixin colors1 {
+    background-color: white;
+}
+
+@mixin colors2 {
+    background-color: lemonchiffon;
+    color: brown;
+    
+}
+
+@mixin colors3 {
+    background-color: black;
+    
+}
+
+// @mixin font {
+
+    
+// }
