@@ -1,0 +1,22 @@
+@mixin PadPositions {
+    padding: 50px;
+    padding-bottom: 100px;
+    
+}
+
+@mixin MarPositions {
+    margin-bottom: 10px;
+    
+}
+
+@mixin helloColors {
+    color: navy;
+    background-color: #F2C12E;
+    
+}
+
+@mixin todoColors {
+    color: #593E25;
+    background-color: #F2C12E;
+    
+}
