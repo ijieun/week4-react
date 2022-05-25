@@ -9,15 +9,18 @@ const Home = () => {
 
   return (
     <div className="homepage__container">
+
       <InputBox todoList={todoList} setTodoList={setTodoList}></InputBox>
       
       <div className="todo__container">
 
-      <ToDoItemList 
+      <div id="todo__logo">
+      <ToDoItemList
         title={"To Do List"}
         todoList={todoList}
         setTodoList={setTodoList}
       ></ToDoItemList>
+      </div>
 
       <ToDoItemList></ToDoItemList>
       </div>

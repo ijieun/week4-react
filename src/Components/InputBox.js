@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
-import styles from "./ComRandomClass.scss";
-import puppy from "./images/puppy.jpg";
+// import styles from "./ComRandomClass.scss";
+import Puppy from "./images/puppy.jpg";
+
 
 
 const InputBox = ({ todoList, setTodoList }) => {
@@ -22,6 +23,7 @@ const InputBox = ({ todoList, setTodoList }) => {
       id: todoList.length,
       text,
       checked: false,
+      // deleted: false,
     });
     setTodoList(nextTodoList);
 
@@ -38,7 +40,7 @@ const InputBox = ({ todoList, setTodoList }) => {
   return (
     <div className="todoapp__inputbox">
       <div className="todoapp__namebox">
-      <img src={puppy} width='500px'/>
+      <img src={Puppy} width='500px'/>
         <input
         id="name_input"
           type="text"

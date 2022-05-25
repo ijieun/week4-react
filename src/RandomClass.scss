@@ -18,5 +18,10 @@
 body{
     @include colors3;
     @include MarPositions;
+    
 }
 
+#todo__logo{
+    font-size: 20px;
+    font-style:oblique;
+}

@@ -6,8 +6,10 @@ const ToDoItemList = ({title, todoList, setTodoList}) =>(
     <div className="todoapp__list">
         <p className="todoapp__list-tit">{title}</p>
         <ul className="todoapp__list-ul">
-            {todoList&&
-            todoList.map((todoItem)=>(
+            {todoList &&
+            todoList.map((todoItem)=>(  
+                // if(todoItem.deleted)
+                // return null;
  
             <ToDoItem
             key={todoItem.id}

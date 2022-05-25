@@ -7,6 +7,7 @@ const ToDoItem = ({ todoItem, todoList, setTodoList }) => {
     const nextTodoList = todoList.map((item) => ({
       ...item,
       checked: item.id === todoItem.id ? !item.checked : item.checked,
+      deleted: item.id === todoItem.id ? !item.deleted : item.deleted,
     }));
 
     setTodoList(nextTodoList);
